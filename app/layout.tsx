@@ -1,16 +1,17 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./_components/menu";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+
+const schibstedGrotesk = Schibsted_Grotesk({
+
+  variable: "--font-schibstedGrotesk",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,8 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        
+        className={`${schibstedGrotesk.variable} antialiased bg-[#F6F6F6] text-neutral-900`}
+        
+      >|
+      <Navbar />
         {children}
       </body>
     </html>

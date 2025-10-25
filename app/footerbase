@@ -1,0 +1,85 @@
+import Image from 'next/image';
+
+export function FooterBase() {
+  return (
+    <div className="w-full bg-white pt-16 md:pt-24 ">
+      
+      <div className="relative h-[350px] w-full bg-white">
+        
+<div className="absolute inset-x-0 bottom-0 h-1/2 bg-[#131415] z-10 " />
+
+
+          {/* SVG Esquerda Topo */}
+
+
+        <div className="absolute left-0 bottom-[25] w-[150px] h-[150px] pointer-events-none z-20"
+
+
+             style={{backgroundImage: 'url(/esqtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+
+
+       
+
+
+        {/* SVG Direita Topo */}
+
+
+        <div className="absolute bottom-[25] right-0 w-[150px] h-[150px] pointer-events-none z-[20]"
+
+
+             style={{backgroundImage: 'url(/dirtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+
+        
+        <div className="absolute inset-0 z-20 w-full max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+          
+          <h4 className="text-[1rem] leading-[100%] text-[#131415] font-semibold uppercase mx-0 md:mx-16" style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
+            OUTROS PROJETOS
+          </h4>
+          <div className="h-4"></div>
+          <div className="relative flex flex-col md:flex-row gap-6 w-full min-h-[340px] md:min-h-[340px]">
+            
+            <div className="w-full md:w-1/2 relative overflow-hidden">
+              <Image 
+                src="/rpgdosnoobs.png" 
+                alt="Projeto RPG dos Noobs" 
+                fill 
+                className="object-cover z-0"
+              />
+              <div className="relative z-10 p-16 flex flex-col justify-between h-full text-white">
+  <h5 className="text-xl font-medium text-white">Investidores</h5>
+  <div className="h-16"></div>
+  <p className="text-sm text-white">O acesso a relatórios financeiros e projeções de crescimento era confuso, minando a confiança em um momento de alta sensibilidade de mercado.</p>
+</div>
+              <div className="absolute top-0 left-0 bottom-[50] w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/esqtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+              <div className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/dirtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+              <div className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/esqbaixop.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+              <div className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/dirbaixop.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+            </div>
+            
+            <div className="hidden md:block w-full md:w-1/2 relative overflow-hidden">
+              <Image 
+                src="/nidavellir.png" 
+                alt="Projeto Nidavellir" 
+                fill 
+                className="object-cover z-0"
+              />
+               <div className="relative z-10 p-6 flex flex-col justify-end h-full text-white">
+                 <h5 className="text-xl font-medium">Comunidade médica</h5>
+                 <p className="text-sm mt-1">Localizar publicações científicas, dados clínicos e informações sobre o novo produto seria uma tarefa árdua, comprometendo a credibilidade e a adoção da solução.</p>
+              </div>
+              <div className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/esqtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+              <div className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/dirtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+              <div className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/esqbaixop.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+              <div className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]" style={{backgroundImage: 'url(/dirbaixop.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+            </div>
+
+          </div>
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+  )
+}
