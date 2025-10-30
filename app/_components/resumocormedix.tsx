@@ -2,7 +2,8 @@ export function ResumoCormedix () {
   return (
     <div>
     
-      <div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row gap-6 px-4 sm:px-8 md:px-12 lg:px-20 ">
+      <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 ">
+        
         
         <div className="relative bg-white overflow-hidden w-full md:w-2/3">
           
@@ -18,11 +19,11 @@ export function ResumoCormedix () {
             
             <div className="self-stretch flex flex-col justify-start items-start gap-4">
               <div className="text-[1rem] leading-[100%] text-[#a3a3a3] font-semibold uppercase">RESULTADOS</div>
-              <p className="text-[1.2rem]">Aumento da confiança de investidores através de um novo dashboard financeiro interativo, que transformou dados complexos em insights visuais.</p>
+              <p className="text-[1.2rem]">Jornada de acesso a dados críticos para investidores (busca e relatórios) facilitada, gerando maior transparência e confiança.</p>
               <div className="w-full h-px bg-[#FF6B00]"></div>
-              <p className="text-[1.2rem]">Melhora no acesso à informação para a comunidade médica, reestruturando um conteúdo legado de mais de 10 anos sob novas regras de usabilidade.</p>
+              <p className="text-[1.2rem]">Reestruturação de +10 anos de conteúdo legado com nova arquitetura e usabilidade.</p>
               <div className="w-full h-px bg-[#FF6B00]"></div>
-              <p className="text-[1.2rem]">Entrega de uma plataforma escalável em WordPress, respeitando restrições críticas de tempo, legais e técnicas.</p>
+              <p className="text-[1.2rem]">Plataforma escalável em WordPress e treinamento entregue superando restrições de prazos.</p>
             </div>
           </div>
           
@@ -50,7 +51,7 @@ export function ResumoCormedix () {
         </div>
         
       </div>
-      <div className="h-24"></div>
+      <div className="h-16"></div>
     </div>
   )
 }

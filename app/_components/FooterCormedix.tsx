@@ -30,7 +30,7 @@ export function FooterCormedix() {
              style={{backgroundImage: 'url(/dirtopob.svg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
 
         
-        <div className="absolute inset-0 z-20 w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="absolute inset-0 z-20 max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12">
           
           <h4 className="text-[1rem] leading-[100%] text-[#131415] font-semibold uppercase mx-0 md:mx-16" style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
             OUTROS PROJETOS

@@ -14,6 +14,7 @@ export function TypingEffect() {
         "design.",
         "inovação.",
         "pão de queijo.",
+        "margaridas.",
       ],
       typeSpeed: 50,
       backSpeed: 30,

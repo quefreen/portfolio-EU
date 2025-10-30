@@ -6,7 +6,7 @@ export function HeroAbout () {
     <div className="w-full">
       
       
-      <div className="h-8"></div>
+      <div className="h-40"></div>
       
       <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row gap-6 px-4 sm:px-8 md:px-12 lg:px-20">
         
@@ -141,7 +141,7 @@ export function HeroAbout () {
   </div>
 </div>
 
-<div className="h-12"></div>
+<div className="h-24"></div>
 
 
 

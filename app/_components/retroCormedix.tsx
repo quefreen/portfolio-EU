@@ -1,7 +1,7 @@
 export function RetroCormedix() {
   return (
     <div className="w-full bg-white py-16 md:py-24">
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 md:px-12 lg:px-20">
+      <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12">
         <div className="flex flex-col gap-y-4">
           <h4 className="text-[1rem] leading-[100%] text-[#a3a3a3] font-semibold uppercase mx-0 md:mx-16" style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
             RETROSPECTO

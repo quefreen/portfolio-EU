@@ -125,7 +125,7 @@
   @apply text-[3rem] 
          leading-[120%] 
          text-[#131415] 
-         font-medium 
+         font-light 
          tracking-tight;
   
   
@@ -215,4 +215,66 @@
   background-repeat: no-repeat;
   pointer-events: none;
   z-index: 1;
+}
+
+/* Tema "quef" para Tippy */
+.tippy-box[data-theme~='quef'] {
+  background-color: #131415;
+  color: #fff;
+  border-radius: 12px;
+  /* fonte maior e legível */
+  font-size: 16px;
+  line-height: 1.45;
+  /* padding mais confortável */
+  padding: 12px 12px;
+  /* sombra suave */
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); */
+}
+
+/* seta na cor do box */
+.tippy-box[data-theme~='quef'] > .tippy-arrow::before {
+  color: #131415;
+}
+
+/* conteúdo pode quebrar linha e respeitar largura */
+.tippy-box[data-theme~='quef'] .tippy-content {
+  white-space: normal; /* permite múltiplas linhas */
+}
+
+/* Esconde o cursor nativo em desktops */
+@media (pointer: fine) {
+  html, body, body * { cursor: none !important; }
+  /* Reexibe cursor de texto em campos editáveis, para não perder a I-beam */
+  input, textarea, [contenteditable="true"] { cursor: text !important; }
+}
+
+/* Em dispositivos touch, não mostrar o custom cursor */
+@media (pointer: coarse) {
+  .custom-cursor-root { display: none !important; }
+}
+
+/* Suaviza o scroll para âncoras (#id) e scrollTo */
+html:focus-within {
+  scroll-behavior: auto;
+}
+
+/* Se tiver navbar fixa, evita que o alvo fique escondido atrás */
+:root {
+  --header-h: 72px; /* ajuste à altura do seu header */
+}
+html {
+  /* desloca o alvo do scroll por padrão */
+  scroll-padding-top: var(--header-h);
+}
+
+/* Respeita usuários com redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within { scroll-behavior: auto; }
+  html { scroll-padding-top: 0; }
+}
+
+/* Mascara para o ícone de download do /public/download.svg */
+.icon-download {
+  -webkit-mask: url("/download.svg") center / contain no-repeat;
+          mask: url("/download.svg") center / contain no-repeat;
 }
