@@ -7,9 +7,9 @@ export function RetroHP() {
             RETROSPECTO
           </h4>
           <div className="flex flex-col gap-y-4">
-            <p className="mx-0 md:mx-16">Neste projeto, entreguei uma plataforma digital crítica no momento mais importante da história da CorMedix, traduzindo ciência complexa e dados financeiros em uma experiência que gera confiança.</p>
-            <p className="mx-0 md:mx-16">Aprendi muito ao atuar como o único designer, tendo que equilibrar as necessidades de públicos tão distintos — investidores e médicos — enquanto navegava em restrições técnicas e prazos apertados.</p>
-            <p className="mx-0 md:mx-16">Fico feliz em dizer que o objetivo foi alcançado: entregamos a tempo uma plataforma escalável que a equipe interna hoje consegue gerenciar e escalar com total autonomia.</p>
+            <p className="mx-0 md:mx-16 text-[1.2rem] leading-7">Criar a primeira identidade digital para uma agência como a Highpoint foi um desafio único. Significou não apenas projetar um site, mas definir como uma marca de sucesso criativa se apresentaria ao mundo digital pela primeira vez.</p>
+            <p className="mx-0 md:mx-16 text-[1.2rem] leading-7">Aprendi imensamente sobre como traduzir a energia de experiências físicas para a interface, usando movimento e cor de forma estratégica. A colaboração intensa com um cliente que também era um Diretor de Criação me ensinou a equilibrar visão artística com funcionalidade digital.</p>
+            <p className="mx-0 md:mx-16 text-[1.2rem] leading-7">O maior ganho foi ver a plataforma lançada e saber que ela agora funciona como um verdadeiro manifesto da identidade criativa e da expertise da Highpoint no competitivo mercado de saúde.</p>
           </div>
         </div>
       </div>

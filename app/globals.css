@@ -278,3 +278,26 @@ html {
   -webkit-mask: url("/download.svg") center / contain no-repeat;
           mask: url("/download.svg") center / contain no-repeat;
 }
+
+/* globals.css */
+@layer utilities {
+  /* Comprimento ideal de parágrafos (responsivo) */
+  .measure {
+    max-width: 60ch;
+  }
+  @media (min-width: 768px) {
+    .measure { max-width: 68ch; }
+  }
+
+  /* Títulos mais estreitos */
+  .measure-title {
+    max-width: 22ch;
+  }
+
+  /* Melhor quebra de linha para headings e parágrafos modernos */
+  .text-balance { text-wrap: balance; } /* equilibra as linhas de títulos */
+  .text-pretty  { text-wrap: pretty; }  /* evita que fiquem quebras feias/órfãs */
+
+  /* Hifenização automática (precisa do lang="pt-BR" no <html>) */
+  .hyphens-auto { hyphens: auto; }
+}

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ReactNode } from "react"
 
+
 // Small utility to merge class names
 function cn(...classes: (string | undefined | false)[]) {
   return classes.filter(Boolean).join(" ")
@@ -56,296 +57,726 @@ export default function BentoHome() {
       )}
     >
           {/* A (azul): quadrado 2x2 */}
-          <BentoCard className="col-span-2 row-span-2 bg-[#2DB5EA]/10 min-h-[400px]">
-            <div className="h-full flex flex-col justify-between bg-[#2DB5EA]">
-                  <div
-            className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-              <div className="p-6 sm:p-16 md:p-16">
-                <h3 className="text-neutral-900 text-lg md:text-xl font-semibold ">Cormedix</h3>
-                <p className="text-neutral-500 text-sm md:text-base">Lorem ipsum</p>
-              </div>
-              <div className="mt-4 h-24" />
-            </div>
-          </BentoCard>
+        
+
+<BentoCard className="col-span-2 row-span-2 min-h-[400px] group">
+  <Link href="/projetos/cormedix" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#016FAD]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/hovermolecula.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* TOPO – título, heading e chips */}
+      <div className="p-8 sm:p-10 md:p-14 relative z-[3]">
+        <h3
+          className="text-[1rem] font-medium text-[#999] mb-4 transition-colors duration-300 group-hover:text-white/80"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Cormedix
+        </h3>
+
+        <p
+          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Prescrevendo
+          <br />
+          dados para
+          <br />
+          decisões.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["UI Design", "Investidores", "Conteúdo legado"].map((tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-white group-hover:border-white/40 group-hover:bg-white/10"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* BASE – "Ver projeto" */}
+      <div className="px-8 sm:px-10 md:px-14 pb-10 relative z-[3]">
+        <div
+          className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          <span></span>
+          <span aria-hidden></span>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
+
+
 
           {/* B (vermelho): retângulo largo 4x2 */}
-          <BentoCard className="col-span-2 md:col-span-4 row-span-2 min-h-[400px]">
-            <div className="h-full grid md:grid-cols-2 gap-3 md:gap-4 bg-[#DC6E70]">
-<div
-            className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-              <div className="flex flex-col p-6 sm:p-16 md:p-16">
-                <h3 className="text-neutral-900 text-lg md:text-xl font-semibold">Gillead</h3>
-                <p className="text-neutral-500 text-sm md:text-base">Lorem ipsum dolor sit amet</p>
-              </div>
-              <div className="" />
+         
+
+<BentoCard className="col-span-2 md:col-span-4 row-span-2 min-h-[400px] group cursor-lock">
+  <Link href="/projetos/gilead" className="block h-full">
+    <div className="relative h-full rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#F9AA00]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/hasdrmolecula.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* CONTEÚDO */}
+      <div className="relative z-[3] h-full flex flex-col justify-between">
+        <div className="p-8 sm:p-10 md:p-14 grid md:grid-cols-2 gap-6">
+          <div>
+            <h3
+  className="
+    text-[1rem] font-medium mb-4
+    text-[#999]
+    transition-colors duration-300
+    group-hover:text-[#131415]
+  "
+  style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+>
+  Gilead
+</h3>
+
+
+            <p
+              className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415]"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              A epidemia
+              <br />
+              de mitos sobre
+              <br />
+              Hepatite C.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              {["UI Design", "Investidores", "Outro tópico"].map((tag) => (
+                <span
+                  key={tag}
+                  className="
+                    px-4 py-1.5 rounded-full border border-neutral-200 
+                    text-xs font-medium text-[#131415] bg-white
+                    transition-colors duration-300
+                    group-hover:bg-transparent
+                    group-hover:border-[#C47F00]
+                  "
+                  style={{
+                    fontFamily: "var(--font-schibstedGrotesk), sans-serif",
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
-          </BentoCard>
+          </div>
+
+          <div className="hidden md:block" />
+        </div>
+
+        <div className="px-8 sm:px-10 md:px-14 pb-10">
+          <div
+            className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium"
+            style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+          >
+            <span></span>
+            <span aria-hidden></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
+
 
           {/* C (verde) 2x2 */}
-          <BentoCard className="col-span-2 row-span-2 min-h-[400px]">
-            <div className="h-full flex flex-col justify-between bg-[#38E282] p-6 sm:p-16 md:p-16">
-                <div
-            className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-              <h3 className="text-neutral-900 text-lg md:text-xl font-semibold">HP</h3>
-              <div className="h-24" />
-            </div>
-          </BentoCard>
+          <BentoCard className="col-span-2 row-span-2 min-h-[400px] group ">
+  <Link href="/projetos/cormedix" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#016FAD]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/bg-hp.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* TOPO – título, heading e chips */}
+      <div className="p-8 sm:p-10 md:p-14 relative z-[3]">
+        <h3
+          className="text-[1rem] font-medium text-[#999] mb-4 transition-colors duration-300 group-hover:text-white/80"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Highpoint
+        </h3>
+
+        <p
+          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Quebrando
+          <br />
+          o dress code
+          <br />
+          da saúde.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["Ui Design", "Criativo", "Lançamento"].map((tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-white group-hover:border-white/40 group-hover:bg-white/10"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* BASE – "Ver projeto" */}
+      <div className="px-8 sm:px-10 md:px-14 pb-10 relative z-[3]">
+        <div
+          className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          <span></span>
+          <span aria-hidden></span>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
 
           {/* D (verde claro) 2x2 */}
-          <BentoCard className="col-span-2 row-span-2 min-h-[400px]">
-            <div className="h-full flex bg-[#CFF3B0] p-6 sm:p-16 md:p-16 ">
-                <h3 className="text-neutral-900 text-lg md:text-xl font-semibold">P&G</h3>
-                <div
-            className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
+          <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-lock">
+  <Link href="/projetos/cormedix" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#0057B7]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/hoveasdla.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* TOPO – título, heading e chips */}
+      <div className="p-8 sm:p-10 md:p-14 relative z-[3]">
+        <h3
+          className="text-[1rem] font-medium text-[#999] mb-4 transition-colors duration-300 group-hover:text-white/80"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          P&G
+        </h3>
+
+        <p
+          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Hub de conteúdo
+          <br />
+          LATAM.
+          <br />
           
-              <div className="h-24 w-full" />
-            </div>
-          </BentoCard>
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["Salesforce", "Design System", "Informativo"].map((tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-white group-hover:border-white/40 group-hover:bg-white/10"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* BASE – "Ver projeto" */}
+      <div className="px-8 sm:px-10 md:px-14 pb-10 relative z-[3]">
+        <div
+          className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          <span></span>
+          <span aria-hidden></span>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
+
 
           {/* E (amarelo claro) 2x2 */}
-          <BentoCard className="col-span-2 row-span-2 min-h-[400px]">
-            <div className="h-full flex bg-[#FFF2A3] p-6 sm:p-16 md:p-16">
-                <div
-            className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <h3 className="text-neutral-900 text-lg md:text-xl font-semibold">Danone</h3>
-              <div className="h-24 w-full" />
-            </div>
-          </BentoCard>
+                <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-lock">
+  <Link href="/projetos/cormedix" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#9700B5]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/hoveasdla.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* TOPO – título, heading e chips */}
+      <div className="p-8 sm:p-10 md:p-14 relative z-[3] cursor-lock">
+        <h3
+          className="text-[1rem] font-medium text-[#999] mb-4 transition-colors duration-300 group-hover:text-white/80"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Danone
+        </h3>
+
+        <p
+          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Análise
+          <br />
+          Heurística
+          <br />
+          
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["UX Design", "Recomendações", "Boas práticas"].map((tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-white group-hover:border-white/40 group-hover:bg-white/10"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* BASE – "Ver projeto" */}
+      <div className="px-8 sm:px-10 md:px-14 pb-10 relative z-[3]">
+        <div
+          className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          <span></span>
+          <span aria-hidden></span>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
 
           {/* F (bege largo) 4x2 */}
-          <BentoCard className="col-span-2 md:col-span-4 row-span-2 min-h-[400px]">
-            <div className="h-full grid md:grid-cols-3 gap-3 md:gap-4 bg-[#F5D9A2]">
-                <div
-            className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-              <div className="md:col-span-2 flex flex-col p-6 sm:p-16 md:p-16">
-                <h3 className="text-neutral-900 text-lg md:text-xl font-semibold">PD Point</h3>
-                <p className="text-neutral-500 text-sm md:text-base">Padrões, sistemas, acessibilidade e notas de produto.</p>
-              </div>
-              <div className="" />
+          <BentoCard className="col-span-2 md:col-span-4 row-span-2 min-h-[400px] group cursor-lock">
+  <Link href="/projetos/gilead" className="block h-full">
+    <div className="relative h-full rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#00857C]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/hasdrmolecula.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* CONTEÚDO */}
+      <div className="relative z-[3] h-full flex flex-col justify-between">
+        <div className="p-8 sm:p-10 md:p-14 grid md:grid-cols-2 gap-6">
+          <div>
+            <h3
+              className="
+                text-[1rem] font-medium mb-4
+                text-[#999]
+                transition-colors duration-300
+                group-hover:text-white/80
+              "
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              MSD
+            </h3>
+
+            <p
+              className="
+                text-[2rem] sm:text-[2.2rem] md:text-[2.6rem]
+                leading-[1.2] text-[#131415]
+                transition-colors duration-300
+                group-hover:text-white
+              "
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              Estabilizando 
+              <br />
+              a jornada 
+              <br />
+              de exames.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              {["UI Design", "Investidores", "Outro tópico"].map((tag) => (
+                <span
+                  key={tag}
+                  className="
+                    px-4 py-1.5 rounded-full border border-neutral-200 
+                    text-xs font-medium text-[#999] bg-white
+                    transition-colors duration-300
+                    group-hover:text-white
+                    group-hover:border-white/40
+                    group-hover:bg-white/10
+                  "
+                  style={{
+                    fontFamily: "var(--font-schibstedGrotesk), sans-serif",
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
-          </BentoCard>
+          </div>
+
+          <div className="hidden md:block" />
+        </div>
+
+        <div className="px-8 sm:px-10 md:px-14 pb-10">
+          <div
+            className="
+              inline-flex items-center gap-2 text-[0.95rem] sm:text-base 
+              text-[#131415] font-medium
+              transition-colors duration-300
+              group-hover:text-white
+            "
+            style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+          >
+            <span></span>
+            <span aria-hidden></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
+
 
           {/* G (ciano) 2x2 */}
-          <BentoCard className="col-span-2 row-span-2 bg-[#B7F0ED] min-h-[400px] ">
-            <div className="h-full bg-[#B7F0ED] p-6 sm:p-16 md:p-16 ">
-                <h3 className="text-neutral-900 text-lg md:text-xl font-semibold ">Nestlé</h3>
-                
-                <div
-            className="absolute top-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1] "
-            style={{
-              backgroundImage: 'url(/esqtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute top-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirtopo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 left-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/esqbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div
-            className="absolute bottom-0 right-0 w-[64px] h-[64px] pointer-events-none z-[1]"
-            style={{
-              backgroundImage: 'url(/dirbaixo.svg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
+                        <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-lock">
+  <Link href="/projetos/cormedix" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#64523E]">
+      {/* BG da molécula no hover */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
+        style={{
+          backgroundImage: "url(/hoveasdla.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Moldura */}
+      <div
+        className="absolute top-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute top-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirtopo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/esqbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[96px] h-[96px] pointer-events-none z-[2]"
+        style={{
+          backgroundImage: "url(/dirbaixo.svg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* TOPO – título, heading e chips */}
+      <div className="p-8 sm:p-10 md:p-14 relative z-[3]">
+        <h3
+          className="text-[1rem] font-medium text-[#999] mb-4 transition-colors duration-300 group-hover:text-white/80"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Nestlé
+        </h3>
+
+        <p
+          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          Visual
+          <br />
+           Aids
+          <br />
           
-              <div className="h-24 w-full " />
-            </div>
-          </BentoCard>
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["UX Design", "Recomendações", "Boas práticas"].map((tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-white group-hover:border-white/40 group-hover:bg-white/10"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* BASE – "Ver projeto" */}
+      <div className="px-8 sm:px-10 md:px-14 pb-10 relative z-[3]">
+        <div
+          className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
+          style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+        >
+          <span></span>
+          <span aria-hidden></span>
+        </div>
+      </div>
+    </div>
+  </Link>
+</BentoCard>
         </div>
       </div>
     </section>

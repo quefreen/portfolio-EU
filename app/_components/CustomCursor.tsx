@@ -18,27 +18,37 @@ export default function CustomCursor({
   const dotRef = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
   const [isGrow, setIsGrow] = useState(false)
+  const [isLock, setIsLock] = useState(false)
 
   // Alvos que fazem crescer por padrão
   const defaultGrowSelector = "a, button, [role='button'], .cursor-grow"
   // Seletor que bloqueia o crescimento
   const notGrowSelector = ".cursor-notgrow, [data-cursor='nogrow']"
+  // Alvos que mudam ícone para cadeado
+  const lockSelector = ".cursor-lock, [data-cursor='lock']"
 
   useEffect(() => {
     if (!showOnTouch && window.matchMedia("(pointer: coarse)").matches) return
 
     const onMove = (e: MouseEvent) => {
       const el = e.target as Element | null
+      if (!el) return
 
-      const growCandidate = el?.closest(defaultGrowSelector)
-      const blockGrow = el?.closest(notGrowSelector)
+      const growCandidate = el.closest(defaultGrowSelector)
+      const blockGrow = el.closest(notGrowSelector)
+      const lockCandidate = el.closest(lockSelector)
 
       const shouldGrow = !!growCandidate && !blockGrow
+      const shouldLock = !!lockCandidate
+
       if (shouldGrow !== isGrow) setIsGrow(shouldGrow)
+      if (shouldLock !== isLock) setIsLock(shouldLock)
       if (!visible) setVisible(true)
 
       const n = dotRef.current
-      if (n) n.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`
+      if (n) {
+        n.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`
+      }
     }
 
     const onLeave = () => setVisible(false)
@@ -49,7 +59,7 @@ export default function CustomCursor({
       document.removeEventListener("mousemove", onMove)
       document.removeEventListener("mouseleave", onLeave)
     }
-  }, [isGrow, visible, showOnTouch])
+  }, [isGrow, isLock, visible, showOnTouch])
 
   return (
     <div
@@ -65,11 +75,11 @@ export default function CustomCursor({
         borderRadius: 9999,
       }}
     >
-      {/* Ícone visível só no grow */}
+      {/* Ícone de + (padrão, só quando crescer e NÃO for lock) */}
       <svg
         viewBox="0 0 24 24"
         className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-100 ${
-          isGrow ? "opacity-100" : "opacity-0"
+          isGrow && !isLock ? "opacity-100" : "opacity-0"
         }`}
         width={20}
         height={20}
@@ -81,6 +91,17 @@ export default function CustomCursor({
       >
         <path d="M12 5v14M5 12h14" />
       </svg>
+
+      {/* Ícone de cadeado (quando crescer E estiver sobre .cursor-lock) */}
+      <img
+        src="/cad.svg"
+        alt=""
+        width={18}
+        height={18}
+        className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-100 ${
+          isGrow && isLock ? "opacity-100" : "opacity-0"
+        }`}
+      />
     </div>
   )
 }

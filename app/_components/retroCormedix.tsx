@@ -7,9 +7,9 @@ export function RetroCormedix() {
             RETROSPECTO
           </h4>
           <div className="flex flex-col gap-y-4">
-            <p className="mx-0 md:mx-16">Neste projeto, entreguei uma plataforma digital crítica no momento mais importante da história da CorMedix, traduzindo ciência complexa e dados financeiros em uma experiência que gera confiança.</p>
-            <p className="mx-0 md:mx-16">Aprendi muito ao atuar como o único designer, tendo que equilibrar as necessidades de públicos tão distintos — investidores e médicos — enquanto navegava em restrições técnicas e prazos apertados.</p>
-            <p className="mx-0 md:mx-16">Fico feliz em dizer que o objetivo foi alcançado: entregamos a tempo uma plataforma escalável que a equipe interna hoje consegue gerenciar e escalar com total autonomia.</p>
+            <p className="mx-0 md:mx-16 text-[1.2rem] text-[#131415]">Neste projeto, entreguei uma plataforma digital crítica no momento mais importante da história <br /> da CorMedix, traduzindo ciência complexa e dados financeiros em uma experiência que gera confiança.</p>
+            <p className="mx-0 md:mx-16 text-[1.2rem] text-[#131415]">Aprendi muito ao atuar como o único designer, tendo que equilibrar as necessidades de públicos <br /> tão distintos (investidores e médicos) enquanto navegava em restrições técnicas e prazos apertados.</p>
+            <p className="mx-0 md:mx-16 text-[1.2rem] text-[#131415]">Fico feliz em dizer que o objetivo foi alcançado: entregamos a tempo uma plataforma escalável<br />  que a equipe interna hoje consegue gerenciar e escalar com total autonomia.</p>
           </div>
         </div>
       </div>

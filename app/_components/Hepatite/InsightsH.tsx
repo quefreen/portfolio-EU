@@ -18,7 +18,7 @@ function LiverCheckupContent() {
           INSIGHTS
         </h4>
         <div className="h-6"></div>
-      <div className="flex items-center gap-4 ">
+      <div className="flex items-center gap-2 ">
         <div className="w-[2rem] h-2 rounded-full bg-orange-500"></div>
         {/* Linha Laranja Estilizada */}
         
@@ -28,7 +28,7 @@ function LiverCheckupContent() {
         </h1>
         <div className="h-10"></div>
       </div>
-    <p>Este insight se tornou a pedra angular da nossa estratégia de conteúdo. A ideia é deslocar a comunicação do território do "medo da doença" (ex: "Você pode ter hepatite e não saber") para o território da "proatividade e bem-estar" (ex: "Como anda a saúde do seu fígado?").</p>
+    <p className='text-[1.2rem] leading-7'>Este insight gerou a principal proposta de conteúdo: deslocar a comunicação do "medo da doença" (ex: "Você pode ter hepatite e não saber") para o território da "proatividade e bem-estar" (ex: "Como anda a saúde do seu fígado?").</p>
     <div className="h-12"></div>
 <div className="relative ">
       {/* Ícone (SVG) */}
@@ -39,7 +39,7 @@ function LiverCheckupContent() {
       </div>
 
       
-
+    <div className=''>
       {/* Bloco de Texto Principal (Citação/Declaração) */}
       <div className="translate-y-6">
         <p className="text-black text-4xl font-['Schibsted_Grotesk'] leading-10 relative z-10 ">
@@ -55,7 +55,7 @@ function LiverCheckupContent() {
           <span className="text-black">, que é muito barato e pode salvar milhares de vidas.</span>
         </p>
       
-
+</div>
     <div className="h-12"></div></div>
 
       {/* Fonte da Citação */}
@@ -66,24 +66,24 @@ function LiverCheckupContent() {
       </div></div>
 
       
-
+      <div className="h-12"></div>
       {/* Motivações de Negócios */}
-      <div className="self-stretch flex flex-col justify-start items-start gap-5 mt-4">
+      <div className="self-stretch flex flex-col justify-start items-start gap-4 mt-4">
         <h3 className="text-gray text-base font-semibold font-['Schibsted_Grotesk'] leading-4 uppercase">
           Motivações de Negócios
         </h3>
-        <div className="self-stretch flex flex-col sm:flex-row justify-start items-start gap-5">
+        <div className="self-stretch flex flex-col sm:flex-row justify-start items-start gap-2">
           
           {/* Cartão 1 */}
           <div className="p-4 bg-white border-2 border-stone-300 flex justify-center items-center flex-1 min-w-0">
-            <p className="text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-6 text-center">
+            <p className="text-black text-[1rem] font-medium font-['Schibsted_Grotesk'] leading-7 text-center">
               Encontrar pessoas do grupo de risco
             </p>
           </div>
-
+        <div className="h-36"></div>
           {/* Cartão 2 */}
           <div className="p-4 bg-white border-2 border-stone-300 flex justify-center items-center flex-1 min-w-0">
-            <p className="justify-start text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-6 text-center">
+            <p className="justify-start text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-7 text-[1rem]  text-center">
               Proteger o paciente no seu primeiro contato com a doença.
             </p>
           </div>
@@ -103,7 +103,7 @@ function LiverCheckupContent() {
 
         
       </div>
-      <p>A solução foi criar uma ferramenta de autoavaliação: o "Quiz para saber se estou vulnerável à transmissão?". O objetivo deste quiz não é diagnosticar, mas sim educar de forma interativa e privada.</p>
+      <p className='text-[1.2rem] leading-7'>Para educar de forma interativa e privada, sugerimos o "Quiz para saber se estou vulnerável à transmissão?". É uma ferramenta de autoavaliação, não de diagnóstico.</p>
        </div>
       <div className="h-12"></div>
       <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12 ">
@@ -140,7 +140,7 @@ function LiverCheckupContent() {
 
         
       </div>
-      <p>A resposta foi criar um "FAQ (Perguntas Frequentes) com ajuda de médicos". A estratégia não é apenas listar informações sobre a doença, mas sim construir uma plataforma de credibilidade que sirva tanto ao paciente quanto ao médico.</p>
+      <p className='text-[1.2rem] leading-7'>Sugerimos um "FAQ (Perguntas Frequentes) com ajuda de médicos". O objetivo não é só listar fatos, mas criar uma plataforma de credibilidade para pacientes e médicos.</p>
        </div>
       <div className="h-12"></div>
       <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12 ">
@@ -177,7 +177,7 @@ function LiverCheckupContent() {
 
         
       </div>
-      <p>A solução foi criar uma série de conteúdos de "Mitos e Verdades sobre Hepatite C", especificamente desenhada para este momento sensível. A estratégia é combater a desinformação e o medo com fatos diretos e acionáveis.</p>
+      <p className='text-[1.2rem] leading-7'>Para combater a desinformação e o medo neste momento sensível, sugeri a série "Mitos e Verdades sobre Hepatite C". O objetivo é usar fatos diretos e acionáveis para informar.</p>
        </div>
       <div className="h-12"></div>
       <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12 ">

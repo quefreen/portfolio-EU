@@ -12,7 +12,7 @@ export function AbordagemH () {
       </h4>
       <h2>O grande obstáculo é a desinformação.</h2>
     </div>
-    <p className="leading-8">Diante do desafio crítico da desinformação, exemplificado por dúvidas reais como a vista [mencionar brevemente o print que você vai usar], a estratégia foi buscar insights diretamente de quem lida com isso na prática: os profissionais de saúde. Para que o site pudesse efetivamente tranquilizar pacientes e esclarecer questões, era fundamental entender a perspectiva dos médicos que atuam no SUS.</p>
+    <p className="leading-7 text-[1.2rem]">Diante do desafio crítico da desinformação, exemplificado por dúvidas reais como a vista [mencionar brevemente o print que você vai usar], a estratégia foi buscar insights diretamente de quem lida com isso na prática: os profissionais de saúde. Para que o site pudesse efetivamente tranquilizar pacientes e esclarecer questões, era fundamental entender a perspectiva dos médicos que atuam no SUS.</p>
   </div>
 
   <div className="w-full md:w-1/2">

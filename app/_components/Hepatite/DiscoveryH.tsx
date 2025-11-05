@@ -11,7 +11,7 @@ export function DiscoveryH () {
           <h2 className="mx-0 md:mx-16">Transformar a experiência médica em insights acionáveis.</h2>
         </div>
         <div className="h-4"></div>
-        <p className="mx-0 md:mx-16 leading-8">Minha responsabilidade foi liderar esta iniciativa de pesquisa para gerar recomendações de produto baseadas na realidade da linha de frente médica. Os objetivos eram claros:</p>
+        <p className="mx-0 md:mx-16 leading-7 text-[1.2rem]">Minha responsabilidade foi liderar esta iniciativa de pesquisa para gerar recomendações de produto baseadas na realidade da linha de frente médica. Os objetivos eram claros:</p>
         
       </div>
 
@@ -121,7 +121,7 @@ export function DiscoveryH () {
           style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
           CRITÉRIO </h4>
           <div className="h-8"></div>
-          <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal leading-10 max-w-[450px] leading-10">Profissionais de saúde que atuam ou já atuaram no sistema público de saúde.</p>
+          <p className="text-[2.0rem] leading-[120%] text-[#131415] font-normal max-w-[450px]">Profissionais de saúde que atuam ou já atuaram no sistema público de saúde.</p>
             
             </div>
             
@@ -133,10 +133,10 @@ export function DiscoveryH () {
           style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
           OBJETIVOS </h4>
           <div className="h-8"></div>
-          <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal leading-10 max-w-[450px] leading-10">Entender a relação do paciente com o tema na rede pública.</p>
+          <p className="text-[2.0rem] leading-[120%] text-[#131415] font-normal max-w-[15ch]">Entender a relação do paciente com o tema na rede pública.</p>
         <div className="h-8"></div>
         
-        <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal leading-10 max-w-[450px] leading-10">Compreender o ponto de vista do médico sobre a atuação do governo.</p>
+        <p className="text-[2.0rem] leading-[120%] text-[#131415] font-normal max-w-[17ch] leading-10">Compreender o ponto de vista do médico sobre a atuação do governo.</p>
             
             </div>
 
@@ -205,7 +205,7 @@ export function DiscoveryH () {
           style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
           CRITÉRIO </h4>
           <div className="h-8"></div>
-          <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal leading-10 max-w-[450px] leading-10">Especialista médico em Hepatites (hepatologista).</p>
+          <p className="text-[2.0rem] leading-[120%] text-[#131415] font-normal max-w-[22ch]">Especialista médico em Hepatites (hepatologista).</p>
             
             </div>
             
@@ -217,10 +217,10 @@ export function DiscoveryH () {
           style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}>
           OBJETIVOS </h4>
           <div className="h-8"></div>
-          <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal leading-10 max-w-[450px] leading-10">Impacto das iniciativas governamentais.</p>
+          <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal max-w-[28ch]">Impacto das iniciativas governamentais.</p>
         <div className="h-8"></div>
         
-        <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal leading-10 max-w-[450px] leading-10">Maiores problemas dos pacientes.</p>
+        <p className="text-[2.0rem] leading-[100%] text-[#131415] font-normal max-w-[14ch]">Maiores problemas dos pacientes.</p>
             
             </div>
 

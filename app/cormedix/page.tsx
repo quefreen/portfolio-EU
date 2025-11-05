@@ -8,7 +8,7 @@ import { ResumoCormedix } from "../_components/resumocormedix";
 import { RetroCormedix } from "../_components/retroCormedix";
 import SmoothRouteScroll from "../_components/SmoothRouteScroll";
 import { SolucaoCormedix } from "../_components/SolucaoCormedix";
-import { TripleCormedix } from "../_components/tripleCormedix";
+
 
 
 
@@ -20,7 +20,6 @@ export default function Cormedix () {
       <HeroCaseCormedix />
       <ResumoCormedix />
       <DualCormedix />
-      <TripleCormedix />
       <BentoCormedix />
       <SolucaoCormedix />
       <RetroCormedix />
