@@ -1,10 +1,22 @@
+import BentoHome from "./_components/Bento";
+import CustomCursor from "./_components/CustomCursor";
+import { Footer } from "./_components/footer";
+import { Footerhome } from "./_components/Footerhome";
+import { Hero } from "./_components/Hero";
+import SmoothRouteScroll from "./_components/SmoothRouteScroll";
 
 
 
-export default function Base () {
+export default function Home() {
   return (
-    <div className="">
-  
-    </div>
+    <main className="">
+      <SmoothRouteScroll />
+      <CustomCursor />
+        <Hero />
+        <BentoHome />
+        <Footerhome/>
+        <Footer />
+
+    </main>
   )
 }
