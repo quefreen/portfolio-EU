@@ -59,8 +59,10 @@ export function HeroAbout () {
         </h4>
     </div>
   </div>
-  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7 text-base text-black">Designer de Produto estratégico com 5 anos de experiência, <span className="font-semibold ">focado em criar produtos digitais funcionais</span>, centrados no usuário e com valor de negócios. Sou um profissional com um repertório diverso, que se estende de 3D a front-end. Utilizei <span className="font-semibold">Next.js e Tailwind CSS</span> para desenvolver este próprio portfólio que você está navegando.</div>
-  <div className="inline-flex justify-start items-center gap-3">
+  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7 text-base text-black">Designer de Produto estratégico com 5 anos de experiência, <span className="font-semibold ">focado em criar produtos digitais funcionais</span>, centrados no usuário e com valor de negócios.</div>
+  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7 text-base text-black">Sou um profissional com um repertório diverso, que se estende de 3D a front-end. <br/>Utilizei <span className="font-semibold">Next.js e Tailwind CSS</span> para desenvolver este próprio portfólio que você está navegando.</div>
+  <div className="inline-flex justify-start items-center">
+    <div className="h-32"></div>
   <div className="flex flex-wrap md:flex-nowrap justify-left md:justify-start gap-4">
   {["Negócios", "Med-tech", "Desenvolvimento", "UI", "UX", "Gaming"].map((item) => (
     <div
@@ -74,7 +76,7 @@ export function HeroAbout () {
   </div>
 </div>
 
-<div className="h-24"></div>
+<div className="h-6"></div>
 
 
 <div className="max-w-6xl mx-auto w-full">

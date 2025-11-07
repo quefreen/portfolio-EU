@@ -41,7 +41,7 @@ export function Footerhome() {
           <div className="relative flex flex-col md:flex-row gap-6 w-full min-h-[320px]">
             {/* CARD 1 */}
      <div className="w-full md:w-1/2">
-  <Link href="/rpg-dos-noobs" className="block h-full cursor-grow">
+  <Link href="/rpgdosnoobs" className="block h-full cursor-grow">
     <div className="relative min-h-[420px] overflow-hidden group">
       {/* imagem */}
       <Image
@@ -112,8 +112,8 @@ export function Footerhome() {
 
             {/* CARD 2 */}
             
-             <div className="w-full md:w-1/2">
-  <Link href="/rpg-dos-noobs" className="block h-full cursor-grow">
+             <div className="w-full hidden md:block md:w-1/2">
+  <Link href="/nidavellir" className="block h-full cursor-grow">
     <div className="relative min-h-[420px] overflow-hidden group">
       {/* imagem */}
       <Image

@@ -13,7 +13,7 @@ export function HeroPD() {
           className="text-[1rem] leading-[100%] text-[#999] font-semibold"
           style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}
         >
-          HighPoint Experience
+          MSD
         </h4>
 
         

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./_components/menu";
+import ScrollTop from "./_components/ScrollToTopButton";
+
 
 const sora = Sora({
   subsets: ["latin"],
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR">
       <body className={`${sora.className} antialiased bg-[#F6F6F6] text-neutral-900`}>
         <Navbar />
+        <ScrollTop />
         {children}
       </body>
     </html>

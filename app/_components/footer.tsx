@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import Link from "next/link"
+import { CopyEmailButton } from "./copymail"
 
 export function Footer() {
   return (
@@ -16,7 +17,7 @@ export function Footer() {
             Chega mais, uai.
           </p>
           <a 
-            href="https://www.linkedin.com/in/seu-usuario" 
+            href="https://www.linkedin.com/in/quefreen/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-[18px] font-normal text-white font-['Schibsted_Grotesk'] text-[1rem] hover:text-orange-500 transition-colors mr-6"
@@ -25,18 +26,11 @@ export function Footer() {
             LinkedIn
           </a>
         <div className="h-32"></div>
-          <a 
-            href="/caminho/do/seu-resume.pdf" 
-            download
-            className="text-[18px] font-normal text-white font-['Schibsted_Grotesk']  hover:text-orange-500 transition-colors"
-            style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}
-          >
-            Baixar Curriculo
-          </a>
+          <CopyEmailButton />
         </div>
       </div>
 
-      <div className="w-full py-12">
+      <div className="w-full">
         <div className="max-w-[1400px] mx-auto w-full px-8 sm:px-4 md:px-12 lg:px-28 h-20 flex justify-between items-center">
           <div className="flex items-center gap-4 ">
     <Link
@@ -50,7 +44,7 @@ export function Footer() {
     </p>
   </div>
           
-<div className="flex items-center gap-2 mx-0 md:mx-16">
+<div className="flex items-center gap-2">
   <p
     className="text-[1rem] text-white"
     style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}

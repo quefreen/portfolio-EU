@@ -1,3 +1,4 @@
+import { TeamAvatars } from "../TeamAvatars"
 import { Widont } from "./Widont"
 
 export function ResumoCormedix () {
@@ -47,36 +48,10 @@ export function ResumoCormedix () {
         <div data-svg-wrapper>
          
         </div>
-        <div data-svg-wrapper>
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="24" cy="24" r="23" fill="#D9D9D9" stroke="white"/>
-          </svg>
-        </div>
-        <div data-svg-wrapper>
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="24" cy="24" r="23" fill="#D9D9D9" stroke="white" />
-          </svg>
-        </div>
-        <div data-svg-wrapper>
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="24" cy="24" r="23" fill="#D9D9D9" stroke="white" />
-          </svg>
-        </div>
-        <div data-svg-wrapper>
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="24" cy="24" r="23" fill="#D9D9D9" stroke="white" />
-          </svg>
-        </div>
-        <div data-svg-wrapper>
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="24" cy="24" r="23" fill="#D9D9D9" stroke="white" />
-          </svg>
-        </div>
-      </div>
-      <div data-svg-wrapper>
-        <svg width="288" height="1" viewBox="0 0 288 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0.5H288" stroke="black"/>
-        </svg>
+        
+      <TeamAvatars members={["ana", "ricardo", "diego", "alvarez", "leticia"]} />
+
+
       </div>
     </div>
     <div className="self-stretch flex flex-col justify-start items-start gap-6">

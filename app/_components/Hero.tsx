@@ -42,7 +42,7 @@ export function Hero () {
             
             <div className="whitespace-pre-line self-stretch flex flex-col justify-start items-start gap-2.5 ">
               <h2 className="">Olá, sou Quef.
-                <Tooltip content="Versão curta de Quéfreen." maxWidth={259} offset={[0, 40]}>
+                <Tooltip content="Versão curta de Quéfreen." maxWidth={160} offset={[0, 40]}>
   <sup
     className="
       inline-flex items-center justify-center
@@ -59,7 +59,7 @@ export function Hero () {
 </Tooltip>
                {"\n"}Designer de produto
                
-               <Tooltip content="10 anos como Direto de Arte, agora projeto para pessoas." maxWidth={259} offset={[0, 40]}>
+               <Tooltip content="10 anos como Diretor de Arte, agora projeto para pessoas." maxWidth={180} offset={[0, 40]}>
   <sup
     className="
       inline-flex items-center justify-center
@@ -77,7 +77,7 @@ export function Hero () {
                
                {"\n"}especializado {"\n"}no setor de saúde.
                
-                <Tooltip content="Simplificando experiências de farmacêuticas e med-tech." maxWidth={259} offset={[0, 40]} >
+                <Tooltip content="Simplificando experiências de farmacêuticas e med-tech." maxWidth={170} offset={[0, 40]} >
   <sup
     className="
       inline-flex items-center justify-center

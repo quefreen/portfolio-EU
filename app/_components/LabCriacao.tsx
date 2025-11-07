@@ -12,6 +12,8 @@ export function LabCriacao() {
           >
             Laboratório de criação
           </h2>
+                     <div className="h-4"></div>
+
           <p
             className="text-base sm:text-lg leading-6 mx-0 md:mx-16 text-[#3F3F46]"
             style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
@@ -19,7 +21,22 @@ export function LabCriacao() {
             Aqui você encontra alguns dos projetos que fiz como diretor de arte:
             logos, campanhas, 3Ds e embalagens.
           </p>
+           <div className="h-12"></div>
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-4 md:px-8 lg:px-12 flex flex-col gap-12">
+        <div className="flex flex-wrap md:flex-nowrap justify-left md:justify-start gap-4 ">
+  {["Papel & Caneta", "Blender", "Photoshop", "Octane", "Maya", "Illustrator"].map((item) => (
+    <div
+      key={item}
+      className="px-6 py-3 bg-white rounded-[32px] flex justify-center items-center text-neutral-900 text-xl font-medium font-['Schibsted_Grotesk'] leading-7"
+    >
+      {item}
+    </div>
+  ))}
+</div></div>
+
         </div>
+
+        
 
         <div className="relative flex flex-col gap-16 md:gap-20">
           {/* HERO 1 */}

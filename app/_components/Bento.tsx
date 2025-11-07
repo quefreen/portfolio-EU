@@ -60,7 +60,7 @@ export default function BentoHome() {
         
 
 <BentoCard className="col-span-2 row-span-2 min-h-[400px] group">
-  <Link href="/projetos/cormedix" className="block h-full">
+  <Link href="/cormedix" className="block h-full">
     <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#016FAD]">
       {/* BG da molécula no hover */}
       <div
@@ -159,7 +159,7 @@ export default function BentoHome() {
          
 
 <BentoCard className="col-span-2 md:col-span-4 row-span-2 min-h-[400px] group cursor-lock">
-  <Link href="/projetos/gilead" className="block h-full">
+  <Link href="/hepatite" className="block h-full">
     <div className="relative h-full rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#F9AA00]">
       {/* BG da molécula no hover */}
       <div
@@ -234,25 +234,17 @@ export default function BentoHome() {
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              {["UI Design", "Investidores", "Outro tópico"].map((tag) => (
-                <span
-                  key={tag}
-                  className="
-                    px-4 py-1.5 rounded-full border border-neutral-200 
-                    text-xs font-medium text-[#131415] bg-white
-                    transition-colors duration-300
-                    group-hover:bg-transparent
-                    group-hover:border-[#C47F00]
-                  "
-                  style={{
-                    fontFamily: "var(--font-schibstedGrotesk), sans-serif",
-                  }}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
+          {["Ui Design", "Criativo", "Lançamento"].map((tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-[#131415] group-hover:border-black/50 group-hover:bg-white/10"
+              style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
 
           <div className="hidden md:block" />
         </div>
@@ -274,7 +266,7 @@ export default function BentoHome() {
 
           {/* C (verde) 2x2 */}
           <BentoCard className="col-span-2 row-span-2 min-h-[400px] group ">
-  <Link href="/projetos/cormedix" className="block h-full">
+  <Link href="/highpoint" className="block h-full">
     <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#016FAD]">
       {/* BG da molécula no hover */}
       <div
@@ -368,9 +360,9 @@ export default function BentoHome() {
 </BentoCard>
 
           {/* D (verde claro) 2x2 */}
-          <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-lock">
-  <Link href="/projetos/cormedix" className="block h-full">
-    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#0057B7]">
+          <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-contact">
+  <Link href="#" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#FF6B00]">
       {/* BG da molécula no hover */}
       <div
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
@@ -454,7 +446,7 @@ export default function BentoHome() {
           className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
-          <span></span>
+          <span className="text-black/30">Apresentado em reuniões.</span>
           <span aria-hidden></span>
         </div>
       </div>
@@ -464,9 +456,9 @@ export default function BentoHome() {
 
 
           {/* E (amarelo claro) 2x2 */}
-                <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-lock">
-  <Link href="/projetos/cormedix" className="block h-full">
-    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#9700B5]">
+                <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-contact">
+  <Link href="#" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#FF6B00]">
       {/* BG da molécula no hover */}
       <div
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
@@ -550,7 +542,7 @@ export default function BentoHome() {
           className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
-          <span></span>
+          <span className="text-black/30">Apresentado em reuniões.</span>
           <span aria-hidden></span>
         </div>
       </div>
@@ -560,7 +552,7 @@ export default function BentoHome() {
 
           {/* F (bege largo) 4x2 */}
           <BentoCard className="col-span-2 md:col-span-4 row-span-2 min-h-[400px] group cursor-lock">
-  <Link href="/projetos/gilead" className="block h-full">
+  <Link href="/pdpoint" className="block h-full">
     <div className="relative h-full rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#00857C]">
       {/* BG da molécula no hover */}
       <div
@@ -684,9 +676,9 @@ export default function BentoHome() {
 
 
           {/* G (ciano) 2x2 */}
-                        <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-lock">
-  <Link href="/projetos/cormedix" className="block h-full">
-    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#64523E]">
+                        <BentoCard className="col-span-2 row-span-2 min-h-[400px] group cursor-contact">
+  <Link href="#" className="block h-full">
+    <div className="relative h-full flex flex-col justify-between rounded-[40px] bg-white shadow-sm transition-colors duration-300 group-hover:bg-[#FF6B00]">
       {/* BG da molécula no hover */}
       <div
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"
@@ -752,7 +744,7 @@ export default function BentoHome() {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          {["UX Design", "Recomendações", "Boas práticas"].map((tag) => (
+          {["Apresentação"].map((tag) => (
             <span
               key={tag}
               className="px-4 py-1.5 rounded-full border border-neutral-200 text-xs font-medium text-[#999] bg-white transition-colors duration-300 group-hover:text-white group-hover:border-white/40 group-hover:bg-white/10"
@@ -770,7 +762,7 @@ export default function BentoHome() {
           className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
-          <span></span>
+          <span className="text-black/30">Apresentado em reuniões.</span>
           <span aria-hidden></span>
         </div>
       </div>

@@ -4,6 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* ⬇⬇⬇ BREAKPOINTS AQUI ⬇⬇⬇ */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 1200px; /* md a partir de 1200px */
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1536px;
+  /* ⬆⬆⬆ BREAKPOINTS AQUI ⬆⬆⬆ */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -42,6 +49,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
+
 
 :root {
   --radius: 0.625rem;
@@ -300,4 +308,20 @@ html {
 
   /* Hifenização automática (precisa do lang="pt-BR" no <html>) */
   .hyphens-auto { hyphens: auto; }
+}
+
+/* Tooltip específico do time (tema 'team') */
+.tippy-box[data-theme~='team'] .tooltip-person {
+  text-align: left;
+}
+
+.tippy-box[data-theme~='team'] .tooltip-name {
+  font-size: 0.75rem;    /* nome menor */
+  font-weight: 600;
+}
+
+.tippy-box[data-theme~='team'] .tooltip-role {
+  font-size: 0.7rem;     /* cargo ainda menor */
+  color: #a3a3a3;
+  margin-top: 2px;       /* força ficar abaixo do nome */
 }

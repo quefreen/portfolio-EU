@@ -1,13 +1,11 @@
-// app/_components/ToolTip.tsx
 "use client"
 
 import { useEffect, useRef } from "react"
 import tippy, { Instance, Props as TippyCoreProps } from "tippy.js"
 import "tippy.js/dist/tippy.css"
-// seu tema preto no globals.css já cobre 'quef'
 
 type Props = {
-  content: string // use string; para HTML, ver nota abaixo
+  content: string
   children: React.ReactNode
   placement?: TippyCoreProps["placement"]
   maxWidth?: number | "none"
@@ -21,7 +19,7 @@ export default function ToolTip({
   placement = "top",
   maxWidth = 280,
   offset = [0, 12],
-  theme = "quef",
+  theme = "quef", // seu tema padrão
 }: Props) {
   const ref = useRef<HTMLSpanElement | null>(null)
   const inst = useRef<Instance | null>(null)
@@ -39,8 +37,7 @@ export default function ToolTip({
       animation: "shift-away-subtle",
       delay: [80, 40],
       zIndex: 60,
-      // se usar HTML dentro de 'content', habilite:
-      // allowHTML: true,
+      allowHTML: true, // 🔹 habilita HTML, mas string simples continua ok
     })
     return () => {
       inst.current?.destroy()
