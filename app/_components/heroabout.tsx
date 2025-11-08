@@ -30,7 +30,7 @@ export function HeroAbout () {
         
         <div className="w-full md:w-1/2 relative h-[300px] md:h-auto">
         
-      <p className="whitespace-pre-line text-[4rem] leading-[110%] text-[#131415] font-medium tracking-tight;
+      <p className="whitespace-pre-line text-[3rem] leading-[110%] text-[#131415] font-medium tracking-tight;
     font-family: var(--font-schibstedGrotesk), sans-serif">
         Designer{"\n"}de produtos{"\n"}com formação criativa{"\n"}e paixão por{"\n"} <TypingEffect />
         

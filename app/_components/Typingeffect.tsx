@@ -35,7 +35,7 @@ export function TypingEffect() {
   return (
     <span
       ref={el}
-      className="text-[4rem] leading-[120%] text-[#919191] font-medium tracking-tight;
+      className="text-[3rem] leading-[120%] text-[#919191] font-medium tracking-tight;
     font-family: var(--font-schibstedGrotesk), sans-serif"
       style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
     />
