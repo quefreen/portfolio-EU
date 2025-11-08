@@ -42,7 +42,7 @@ export function Navbar() {
         {/* Logo + título à esquerda */}
         <div className="flex items-center gap-4 ">
           <Link
-            href="/home"
+            href="/"
             className="text-[18px] font-normal text-[#131415] font-['Schibsted_Grotesk']  hover:text-[#FF6B00] transition-colors"
           >
             quefreen
@@ -130,14 +130,14 @@ export function Navbar() {
           }}
         >
           <nav className="flex flex-col space-y-4 px-6 py-4 text-lg text-neutral-900 font-medium">
-            <Link href="/about" className="hover:text-[#FF6B00] transition-colors">
-              About
+            <Link href="/sobre" className="hover:text-[#FF6B00] transition-colors">
+              Sobre
+            </Link>
+            <Link href="/playground" className="hover:text-[#FF6B00] transition-colors">
+              Playground
             </Link>
             <Link href="#" className="hover:text-[#FF6B00] transition-colors">
-              PT
-            </Link>
-            <Link href="#" className="hover:text-[#FF6B00] transition-colors">
-              EN
+              
             </Link>
           </nav>
         </div>

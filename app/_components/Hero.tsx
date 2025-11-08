@@ -2,6 +2,8 @@ import "tippy.js/dist/tippy.css";        /* base */
 import "tippy.js/themes/light.css";      /* se quiser tema */
 import Tooltip from "./ToolTip"
 import Spline from "@splinetool/react-spline"
+import Image from "next/image"
+
 export function Hero () {
   return (
  
@@ -17,31 +19,31 @@ export function Hero () {
       <div className="h-8"></div>
       
       <div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
-        
+  {/* BLOCO DO SPLINE / IMAGEM */}
+  <div className="relative w-full md:w-3/5 h-[360px] sm:h-[420px] md:h-[720px]">
+    {/* Mobile: imagem estática */}
+    <div className="relative w-full max-w-[300px] md:hidden h-full">
+      <Image
+        src="/quef3d.png"
+        alt="Ilustração 3D do Quef"
+        fill
+        className="object-cover "
+        priority
+      />
+    </div>
 
-      {/* Spline */}
-      <div className="relative w-full md:w-3/5  relative h-[720px]">
-        <div className="absolute inset-0 z-[5]">
-          <Spline scene="https://prod.spline.design/AIfe4jRcveYWT6HX/scene.splinecode " />
-        </div>
+    {/* Desktop: Spline */}
+    <div className="absolute inset-0 hidden md:block">
+      <Spline scene="https://prod.spline.design/AIfe4jRcveYWT6HX/scene.splinecode" />
+    </div>
+  </div>
 
-
-        
-          <div className="w-full flex flex-col justify-start items-start">
-            
-            <div className="self-stretch flex flex-col justify-start items-start">
-              
-            </div>
-          </div>
-          
-          
-        </div>
-        
-        <div className="relative w-full md:w-2/5  relative h-[720px]">
-          <div className="h-full flex flex-col justify-center items-start">
-            
-            <div className="whitespace-pre-line self-stretch flex flex-col justify-start items-start gap-2.5 ">
-              <h2 className="">Olá, sou Quef.
+  {/* BLOCO DO TEXTO */}
+  <div className="relative w-full md:w-2/5 h-auto md:h-[720px]">
+    <div className="h-full flex flex-col justify-center items-start">
+      <div className="whitespace-pre-line self-stretch flex flex-col justify-start items-start gap-2.5 ">
+        <h2 className="">
+          Olá, sou Quef.
                 <Tooltip content="Versão curta de Quéfreen." maxWidth={160} offset={[0, 40]}>
   <sup
     className="

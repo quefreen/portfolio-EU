@@ -84,7 +84,7 @@ export function ResumoH () {
         >
           MINHA FUNÇÃO
         </h4>
-        <div className="self-stretch justify-start text-[1rem] text-base font-normal font-['Schibsted_Grotesk'] leading-6 text-[#131415]">Estratégia de UX & Design.<br/>Handoff e a Sustentabilidade.<br/>Prototipagem da Molécula 3D.</div>
+        <div className="self-stretch justify-start text-[1rem] text-base font-normal font-['Schibsted_Grotesk'] leading-6 text-[#131415]">Visual Design<br/>Handoff<br/>Animações</div>
       </div>
       <div data-svg-wrapper>
         <svg width="288" height="1" viewBox="0 0 288 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +99,7 @@ export function ResumoH () {
         >
           TIMELINE
         </h4>
-      <div className="self-stretch justify-start text-[1rem] text-lg font-normal font-['Schibsted_Grotesk']  leading-6">2023</div>
+      <div className="self-stretch justify-start text-[1rem] text-lg font-normal font-['Schibsted_Grotesk']  leading-6">2024</div>
     </div>
   </div>
 </div>

@@ -34,7 +34,7 @@ export function Footer() {
         <div className="max-w-[1400px] mx-auto w-full px-8 sm:px-4 md:px-12 lg:px-28 h-20 flex justify-between items-center">
           <div className="flex items-center gap-4 ">
     <Link
-      href="/home"
+      href="/"
       className="text-[18px] font-normal text-white font-['Schibsted_Grotesk']  hover:text-[#FF6B00] transition-colors"
     >
       quefreen
