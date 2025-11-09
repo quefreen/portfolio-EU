@@ -6,6 +6,7 @@ import { Navbar } from "./_components/menu";
 import ScrollTop from "./_components/ScrollToTopButton";
 
 
+
 const sora = Sora({
   subsets: ["latin"],
   weight: ["400","500","600","700"], // escolha os pesos que vai usar

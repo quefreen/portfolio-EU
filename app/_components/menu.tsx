@@ -43,17 +43,17 @@ export function Navbar() {
         <div className="flex items-center gap-4 ">
           <Link
             href="/"
-            className="text-[18px] font-normal text-[#131415] font-['Schibsted_Grotesk']  hover:text-[#FF6B00] transition-colors"
+            className="text-[18px] font-normal text-[#131415]  hover:text-[#FF6B00] transition-colors"
           >
             quefreen
           </Link>
-          <p className="text-[18px] font-normal text-[#999] font-['Schibsted_Grotesk']">
+          <p className="text-[18px] font-normal text-[#999] ">
             designer de produto
           </p>
         </div>
 
         {/* Desktop Links */}
-        <nav className="hidden md:flex space-x-8 items-center text-[18px] font-normal text-[#131415] font-['Schibsted_Grotesk'">
+        <nav className="hidden md:flex space-x-8 items-center text-[18px] font-normal text-[#131415] ">
           <Link href="/sobre" className="hover:text-[#FF6B00] transition-colors">
             sobre
           </Link>
