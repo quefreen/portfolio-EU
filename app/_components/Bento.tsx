@@ -38,7 +38,7 @@ function BentoCard({
 export default function BentoHome() {
   return (
     
-    <section className="w-full max-w-[1400px] mx-auto w-full px-4 sm:px-4 md:px-8 lg:px-12">
+    <section className="w-full max-w-[1400px] mx-auto px-4 sm:px-4 md:px-8 lg:px-12">
   <div className="">
     <h4
       className="text-[1rem] leading-[100%] text-[#999] font-semibold"
