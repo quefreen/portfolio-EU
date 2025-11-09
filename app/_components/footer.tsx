@@ -35,11 +35,11 @@ export function Footer() {
           <div className="flex items-center gap-4 ">
     <Link
       href="/"
-      className="text-[18px] font-normal text-white font-['Schibsted_Grotesk']  hover:text-[#FF6B00] transition-colors"
+      className="text-[18px] font-normal text-white hover:text-[#FF6B00] transition-colors"
     >
       quefreen
     </Link>
-    <p className="text-[18px] font-normal text-[#999] font-['Schibsted_Grotesk']">
+    <p className="text-[18px] font-normal text-[#999] ">
       designer de produto
     </p>
   </div>

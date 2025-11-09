@@ -59,15 +59,14 @@ export function HeroAbout () {
         </h4>
     </div>
   </div>
-  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7 text-base text-black">Designer de Produto estratégico com 5 anos de experiência, <span className="font-semibold ">focado em criar produtos digitais funcionais</span>, centrados no usuário e com valor de negócios.</div>
-  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7 text-base text-black">Sou um profissional com um repertório diverso, que se estende de 3D a front-end. <br/>Utilizei <span className="font-semibold">Next.js e Tailwind CSS</span> para desenvolver este próprio portfólio que você está navegando.</div>
+  <div className="self-stretch justify-start text-black text-xl font-normal  leading-7 text-base text-black">Sou um profissional com um repertório diverso, que se estende de 3D a front-end. <br/>Utilizei <span className="font-semibold">Next.js e Tailwind CSS</span> para desenvolver este próprio portfólio que você está navegando.</div>
   <div className="inline-flex justify-start items-center">
     <div className="h-32"></div>
   <div className="flex flex-wrap md:flex-nowrap justify-left md:justify-start gap-4">
   {["Negócios", "Med-tech", "Desenvolvimento", "UI", "UX", "Gaming"].map((item) => (
     <div
       key={item}
-      className="px-6 py-3 bg-white rounded-[32px] flex justify-center items-center text-neutral-900 text-xl font-medium font-['Schibsted_Grotesk'] leading-7"
+      className="px-6 py-3 bg-white rounded-[32px] flex justify-center items-center text-neutral-900 text-xl font-medium leading-7"
     >
       {item}
     </div>
@@ -90,14 +89,14 @@ export function HeroAbout () {
         <div className="max-w-7xl"></div>
     <div className="w-full inline-flex flex-col justify-start items-start gap-3.5">
   <div className="self-stretch flex flex-col justify-start items-start gap-px">
-    <div className="self-stretch justify-start text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-7">Competitive Edge <div className="h-1"></div></div>
+    <div className="self-stretch justify-start text-black text-xl font-medium  leading-7">Competitive Edge <div className="h-1"></div></div>
     <div className="self-stretch inline-flex justify-between items-end">
         
-      <div className="justify-start text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">DESIGNER DE PRODUTO SÊNIOR</div>
-      <div className="justify-start text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">2022 / ATUALMENTE</div>
+      <div className="justify-start text-neutral-400 text-[1rem] font-semibold  leading-none">DESIGNER DE PRODUTO SÊNIOR</div>
+      <div className="justify-start text-neutral-400 text-[1rem] font-semibold leading-none">2022 / ATUALMENTE</div>
     </div>
   </div>
-  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7">Liderança na apresentação de design a clientes, colaboração interdepartamental (Publicidade, Atendimento) e padronização interna via treinamento e documentação de desenvolvimento. Experiência completa no processo de UX/UI: auditorias, journey maps, análise competitiva e design de interfaces.</div>
+  <div className="self-stretch justify-start text-black text-xl font-normal leading-7">Liderança na apresentação de design a clientes, colaboração interdepartamental (Publicidade, Atendimento) e padronização interna via treinamento e documentação de desenvolvimento. Experiência completa no processo de UX/UI: auditorias, journey maps, análise competitiva e design de interfaces.</div>
   <div className="w-full h-[1px] bg-[#919191]"></div>
 
   
@@ -105,14 +104,14 @@ export function HeroAbout () {
 <div className="h-12"></div>
 <div className="w-full inline-flex flex-col justify-start items-start gap-3.5">
   <div className="self-stretch flex flex-col justify-start items-start gap-px">
-    <div className="self-stretch justify-start text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-7">IPG Health <div className="h-1"></div></div>
+    <div className="self-stretch justify-start text-black text-xl font-medium leading-7">IPG Health <div className="h-1"></div></div>
     <div className="self-stretch inline-flex justify-between items-end">
         
-      <div className="justify-start text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">DESIGNER DE PRODUTO SÊNIOR</div>
-      <div className="justify-start text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">2020 / 2022</div>
+      <div className="justify-start text-neutral-400 text-[1rem] font-semibold  leading-none">DESIGNER DE PRODUTO SÊNIOR</div>
+      <div className="justify-start text-neutral-400 text-[1rem] font-semibold  leading-none">2020 / 2022</div>
     </div>
   </div>
-  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7">Liderei apresentações para clientes, desenvolvi uma biblioteca inovadora (3D/micro-interações) para a plataforma Veeva e conduzi o treinamento de novos membros da equipe.</div>
+  <div className="self-stretch justify-start text-black text-xl font-normal leading-7">Liderei apresentações para clientes, desenvolvi uma biblioteca inovadora (3D/micro-interações) para a plataforma Veeva e conduzi o treinamento de novos membros da equipe.</div>
   <div className="w-full h-[1px] bg-[#919191]"></div>
 
   
@@ -121,24 +120,24 @@ export function HeroAbout () {
 
 <div className="w-full inline-flex flex-col justify-start items-start gap-3.5">
   <div className="self-stretch flex flex-col justify-start items-start gap-px">
-    <div className="self-stretch justify-start text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-7">Tugarê <div className="h-1"></div></div>
+    <div className="self-stretch justify-start text-black text-xl font-medium leading-7">Tugarê <div className="h-1"></div></div>
     <div className="self-stretch inline-flex justify-between items-end">
         
-      <div className="justify-start text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">DESIGNER DE INTERFACE</div>
-      <div className="justify-start text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">2019 / 2020</div>
+      <div className="justify-start text-neutral-400 text-[1rem] font-semibold leading-none">DESIGNER DE INTERFACE</div>
+      <div className="justify-start text-neutral-400 text-[1rem] font-semibold  leading-none">2019 / 2020</div>
     </div>
   </div>
-  <div className="self-stretch justify-start text-black text-xl font-normal font-['Schibsted_Grotesk'] leading-7">Responsável pelo desenho de sites e portais, incluindo a criação de protótipos, wireframes e sitemaps para definir a estrutura e a experiência do usuário.</div>
+  <div className="self-stretch justify-start text-black text-xl font-normal leading-7">Responsável pelo desenho de sites e portais, incluindo a criação de protótipos, wireframes e sitemaps para definir a estrutura e a experiência do usuário.</div>
   <div className="w-full h-[1px] bg-[#919191]"></div>
 
   
 </div>
 <div className="h-12"></div>
 <div className="w-full flex justify-between items-center">
-  <div className="text-black text-xl font-medium font-['Schibsted_Grotesk'] leading-7">
+  <div className="text-black text-xl font-medium  leading-7">
     Direção de Arte
   </div>
-  <div className="text-neutral-400 text-[1rem] font-semibold font-['Schibsted_Grotesk'] leading-none">
+  <div className="text-neutral-400 text-[1rem] font-semibold  leading-none">
     2014 / 2019
   </div>
 </div>
