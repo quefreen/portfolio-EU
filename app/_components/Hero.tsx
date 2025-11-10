@@ -34,7 +34,7 @@ export function Hero () {
 
     {/* Desktop: Spline */}
     <div className="absolute inset-0 hidden md:block">
-      <Spline scene="https://prod.spline.design/AIfe4jRcveYWT6HX/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/asZQCydgchLhW7Tj/scene.splinecode" />
     </div>
   </div>
 
