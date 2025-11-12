@@ -3,6 +3,9 @@ import "tippy.js/themes/light.css";      /* se quiser tema */
 import Tooltip from "./ToolTip"
 import Spline from "@splinetool/react-spline"
 import Image from "next/image"
+import SkillsMarquee from "../SkillsMarquee";
+
+
 
 export function Hero () {
   return (
@@ -13,16 +16,21 @@ export function Hero () {
       
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-8 md:px-12 lg:px-20">
         
+        
         <div className="h-4"></div>
       </div>
 
-      <div className="h-8"></div>
+      <div className="h-16"></div>
+      <div className="">< SkillsMarquee /></div>
+      
       
       <div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
+        
   {/* BLOCO DO SPLINE / IMAGEM */}
   <div className="relative w-full md:w-3/5 h-[360px] sm:h-[420px] md:h-[720px]">
     {/* Mobile: imagem estática */}
     <div className="relative w-full max-w-[300px] md:hidden h-full">
+      
       <Image
         src="/quef3d.png"
         alt="Ilustração 3D do Quef"
@@ -95,8 +103,12 @@ export function Hero () {
   </sup>
 </Tooltip>
 
+
+
+
                </h2>
             </div>
+            
           </div>
           
   

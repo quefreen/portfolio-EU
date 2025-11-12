@@ -73,7 +73,7 @@ export default function CustomCursor({
     <div
       ref={dotRef}
       aria-hidden="true"
-      className={`fixed left-0 top-0 z-[9999] pointer-events-none transition-all duration-450 ease-out ${
+      className={`fixed left-0 top-0 z-[9999] pointer-events-none transition-all duration-200 ease-out ${
         visible ? "opacity-100" : "opacity-0"
       }`}
       style={{

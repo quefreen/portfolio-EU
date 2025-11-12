@@ -41,7 +41,7 @@ export default function BentoHome() {
     <section className="w-full max-w-[1400px] mx-auto px-4 sm:px-4 md:px-8 lg:px-12">
   <div className="">
     <h4
-      className="text-[1rem] leading-[100%] text-[#999] font-semibold"
+      className="text-[1rem] leading-[100%] text-[#999] font-semibold px-4 sm:px-4 md:px-4 lg:px-16"
       style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}
     >
       PROJETOS
