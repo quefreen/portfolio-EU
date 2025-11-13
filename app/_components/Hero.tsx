@@ -48,6 +48,7 @@ export function Hero () {
     
   </div>
   {/* BLOCO DO TEXTO */}
+  
 <div className="relative w-full md:w-2/5 h-auto md:h-[720px]">
   <div className="h-full flex flex-col justify-center items-start">
     <h2
@@ -56,7 +57,31 @@ export function Hero () {
     md:text-[32px] md:leading-[1.1]
     lg:text-[40px] lg:leading-[1.1]
   "
->
+><div className="p-2.5 bg-green-100/0 rounded-[64px] outline outline-1 outline-offset-[-1px] outline-green-500 inline-flex flex-col justify-start items-start gap-1">
+  <div className="inline-flex justify-center items-center gap-1">
+    <div data-svg-wrapper className="relative">
+      <svg
+        width="8"
+        height="8"
+        viewBox="0 0 8 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {/* bolinha de fundo, fixa */}
+        <circle cx="4" cy="4" r="4" fill="#46BB54" fillOpacity="0.2" />
+        {/* bolinha escura, pulsando */}
+        <circle cx="4" cy="4" r="2" className="dot-pulse" fill="#46BB54" />
+      </svg>
+    </div>
+    <div className="tracking-wide justify-start text-neutral-900 text-xs font-light font-['Sora'] leading-3">
+      atualmente na
+    </div>
+    <div className="tracking-wide justify-start text-neutral-900 text-xs font-semibold font-['Sora'] leading-3">
+      C/EDGE
+    </div>
+  </div>
+</div><div className="h-4"></div>
+
   {/* linha 1 */}
   <span className="block">
     Olá, sou Quef.
@@ -128,6 +153,7 @@ export function Hero () {
         3
       </sup>
     </Tooltip>
+    
   </span>
   <p className="mt-4 text-[1.2rem] text-[#666] leading-relaxed">
   5 anos de experiência <br />
@@ -139,6 +165,8 @@ export function Hero () {
   </div>
 </div>
 
+
+
   </div>
 
 
@@ -148,5 +176,7 @@ export function Hero () {
      
   
     </div>
+
+    
 
   )}
