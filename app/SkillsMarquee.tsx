@@ -9,7 +9,7 @@ const TAGS = [
   "#ux design",
   "#design de produto",
   "#pesquisa com usuários",
-  "#wirefre",
+  "#wireframe",
   "#prototipação",
   "#design responsivo",
   "#next.js",
