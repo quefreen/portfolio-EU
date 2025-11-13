@@ -27,7 +27,7 @@ export function Hero () {
       <div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
         
   {/* BLOCO DO SPLINE / IMAGEM */}
-  <div className="relative w-full md:w-3/5 h-[360px] sm:h-[420px] md:h-[720px]">
+  <div className="relative w-full md:w-3/5 h-[360px] sm:h-[420px] sm:h-[420px] md:h-[720px]">
     {/* Mobile: imagem estática */}
     <div className="relative w-full max-w-[300px] md:hidden h-full">
       
@@ -50,7 +50,7 @@ export function Hero () {
   <div className="relative w-full md:w-2/5 h-auto md:h-[720px]">
     <div className="h-full flex flex-col justify-center items-start">
       <div className="whitespace-pre-line self-stretch flex flex-col justify-start items-start gap-2.5 ">
-        <h2 className="">
+        <h2 className="md:text-[32px] md:leading-[32px] lg:text-[40px] lg:leading-[40px]">
           Olá, sou Quef.
                 <Tooltip content="Versão curta de Quéfreen." maxWidth={160} offset={[0, 40]}>
   <sup
@@ -74,7 +74,7 @@ export function Hero () {
     className="
       inline-flex items-center justify-center
       w-6 h-6           /* 12x12px */
-       text-[14px] leading-[10px] font-semibold
+       text-[14px] leading-[14px] font-semibold
       rounded-[3px] bg-white text-[#131415]   /* ou sua cor */
       align-super -translate-y-6    translate-x-0         /* levanta um pouco */
       ml-1 select-none cursor-help
@@ -83,11 +83,15 @@ export function Hero () {
   >
     2
   </sup>
-</Tooltip>
+</Tooltip>{"\n"}que simplifica 
                
-               {"\n"}especializado {"\n"}no setor de saúde.
+
                
-                <Tooltip content="Simplificando experiências de farmacêuticas e med-tech." maxWidth={170} offset={[0, 40]} >
+             
+
+{"\n"}jornadas complexas.
+
+                <Tooltip content="Explorar. Definir. Criar. Entregar." maxWidth={115} offset={[0, 40]}>
   <sup
     className="
       inline-flex items-center justify-center
@@ -107,6 +111,7 @@ export function Hero () {
 
 
                </h2>
+               <p className="text-[1.2rem] text-[#666]">5 anos de experiência {"\n"}em UX, UI e produtos digitais.</p>
             </div>
             
           </div>
@@ -126,5 +131,4 @@ export function Hero () {
   
     </div>
 
-  )
-}
+  )}

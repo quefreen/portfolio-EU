@@ -116,7 +116,7 @@ export default function BentoHome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           Prescrevendo
@@ -223,7 +223,7 @@ export default function BentoHome() {
 
 
             <p
-              className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415]"
+              className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-[#131415]"
               style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
             >
               A epidemia
@@ -322,7 +322,7 @@ export default function BentoHome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           Quebrando
@@ -417,7 +417,7 @@ export default function BentoHome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           Hub de conteúdo
@@ -446,7 +446,7 @@ export default function BentoHome() {
           className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
-          <span className="text-black/30">Apresentado em reuniões.</span>
+          <span className="text-black/30 text-[0.75rem]">Apresentado em reuniões.</span>
           <span aria-hidden></span>
         </div>
       </div>
@@ -513,7 +513,7 @@ export default function BentoHome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           Análise
@@ -542,7 +542,7 @@ export default function BentoHome() {
           className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
-          <span className="text-black/30">Apresentado em reuniões.</span>
+          <span className="text-black/30 text-[0.75rem]">Apresentado em reuniões.</span>
           <span aria-hidden></span>
         </div>
       </div>
@@ -616,7 +616,7 @@ export default function BentoHome() {
 
             <p
               className="
-                text-[2rem] sm:text-[2.2rem] md:text-[2.6rem]
+                text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem]
                 leading-[1.2] text-[#131415]
                 transition-colors duration-300
                 group-hover:text-white
@@ -733,7 +733,7 @@ export default function BentoHome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-[#131415] transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           Visual
@@ -762,7 +762,7 @@ export default function BentoHome() {
           className="inline-flex items-center gap-2 text-[0.95rem] sm:text-base text-[#131415] font-medium transition-colors duration-300 group-hover:text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
-          <span className="text-black/30">Apresentado em reuniões.</span>
+          <span className="text-black/30 text-[0.75rem]">Apresentado em reuniões.</span>
           <span aria-hidden></span>
         </div>
       </div>

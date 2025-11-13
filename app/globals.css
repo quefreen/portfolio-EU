@@ -6,8 +6,8 @@
 @theme inline {
   /* ⬇⬇⬇ BREAKPOINTS AQUI ⬇⬇⬇ */
   --breakpoint-sm: 640px;
-  --breakpoint-md: 1200px; /* md a partir de 1200px */
-  --breakpoint-lg: 1280px;
+  --breakpoint-md: 990px; /* md a partir de 1200px */
+  --breakpoint-lg: 1250px;
   --breakpoint-xl: 1536px;
   /* ⬆⬆⬆ BREAKPOINTS AQUI ⬆⬆⬆ */
 

@@ -95,7 +95,7 @@ export function Footerhome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           RPG dos Noobs
@@ -167,7 +167,7 @@ export function Footerhome() {
         </h3>
 
         <p
-          className="text-[2rem] sm:text-[2.2rem] md:text-[2.6rem] leading-[1.2] text-white"
+          className="text-[2rem] sm:text-[2.2rem] md:text-[1.6rem] lg:text-[2.2rem] leading-[1.2] text-white"
           style={{ fontFamily: "var(--font-schibstedGrotesk), sans-serif" }}
         >
           Nidavellir
