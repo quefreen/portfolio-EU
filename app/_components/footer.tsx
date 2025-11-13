@@ -23,7 +23,7 @@ export function Footer() {
             className="text-[18px] font-normal  text-white font-['Schibsted_Grotesk'] text-[1rem] hover:text-orange-500 transition-colors mr-6"
             style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}
           >
-            LinkedIn
+            linkedIn
           </a>
         <div className="h-32"></div>
           <CopyEmailButton />

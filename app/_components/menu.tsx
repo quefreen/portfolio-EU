@@ -62,6 +62,16 @@ export function Navbar() {
             playground
           </Link>
 
+          <a 
+            href="https://www.linkedin.com/in/quefreen/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[18px] font-normal  text-[#131415] font-['Schibsted_Grotesk'] text-[1rem] hover:text-orange-500 transition-colors mr-6"
+            style={{ fontFamily: 'var(--font-schibstedGrotesk), sans-serif' }}
+          >
+            linkedIn
+          </a>
+
           {/* Botão: copiar e-mail (mantendo o ícone) */}
           <button
   type="button"
@@ -131,12 +141,13 @@ export function Navbar() {
         >
           <nav className="flex flex-col space-y-4 px-6 py-4 text-lg text-neutral-900 font-medium">
             <Link href="/sobre" className="hover:text-[#FF6B00] transition-colors">
-              Sobre
+              sobre
             </Link>
             <Link href="/playground" className="hover:text-[#FF6B00] transition-colors">
-              Playground
+              playground
             </Link>
-            <Link href="#" className="hover:text-[#FF6B00] transition-colors">
+
+            <Link href="https://www.linkedin.com/in/quefreen/" className="hover:text-[#FF6B00] transition-colors"> linkedIn
               
             </Link>
           </nav>

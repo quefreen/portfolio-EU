@@ -24,18 +24,16 @@ export function Hero () {
       <div className="">< SkillsMarquee /></div>
       
       
-      <div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
-        
+<div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
   {/* BLOCO DO SPLINE / IMAGEM */}
-  <div className="relative w-full md:w-3/5 h-[360px] sm:h-[420px] sm:h-[420px] md:h-[720px]">
+  <div className="relative w-full md:w-3/5 h-auto md:h-[720px] mb-8 md:mb-0">
     {/* Mobile: imagem estática */}
-    <div className="relative w-full max-w-[300px] md:hidden h-full">
-      
+    <div className="relative w-full max-w-[300px] sm:max-w-[420px] mx-auto md:hidden aspect-[4/5]">
       <Image
         src="/quef3d.png"
         alt="Ilustração 3D do Quef"
         fill
-        className="object-cover "
+        className="object-cover"
         priority
       />
     </div>
@@ -50,7 +48,7 @@ export function Hero () {
   <div className="relative w-full md:w-2/5 h-auto md:h-[720px]">
     <div className="h-full flex flex-col justify-center items-start">
       <div className="whitespace-pre-line self-stretch flex flex-col justify-start items-start gap-2.5 ">
-        <h2 className="md:text-[32px] md:leading-[32px] lg:text-[40px] lg:leading-[40px]">
+        <h2 className="text-[30px] mx-auto sm:text-[24px] sm:leading-[24px] md:text-[32px] md:leading-[32px] lg:text-[40px] lg:leading-[40px]">
           Olá, sou Quef.
                 <Tooltip content="Versão curta de Quéfreen." maxWidth={160} offset={[0, 40]}>
   <sup
@@ -105,13 +103,13 @@ export function Hero () {
   >
     3
   </sup>
-</Tooltip>
+</Tooltip><p className="text-[1.2rem] text-[#666]">5 anos de experiência {"\n"}em UX, UI e produtos digitais.</p>
 
 
 
 
                </h2>
-               <p className="text-[1.2rem] text-[#666]">5 anos de experiência {"\n"}em UX, UI e produtos digitais.</p>
+               
             </div>
             
           </div>
