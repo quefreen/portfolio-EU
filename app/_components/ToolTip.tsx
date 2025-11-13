@@ -19,7 +19,7 @@ export default function ToolTip({
   placement = "top",
   maxWidth = 280,
   offset = [0, 12],
-  theme = "quef", // seu tema padrão
+  theme = "quef",
 }: Props) {
   const ref = useRef<HTMLSpanElement | null>(null)
   const inst = useRef<Instance | null>(null)
@@ -37,7 +37,7 @@ export default function ToolTip({
       animation: "shift-away-subtle",
       delay: [80, 40],
       zIndex: 60,
-      allowHTML: true, // 🔹 habilita HTML, mas string simples continua ok
+      allowHTML: true,
     })
     return () => {
       inst.current?.destroy()
@@ -46,7 +46,7 @@ export default function ToolTip({
   }, [content, placement, maxWidth, offset, theme])
 
   return (
-    <span ref={ref} className="inline-flex">
+    <span ref={ref} className="inline-block align-baseline">
       {children}
     </span>
   )
