@@ -35,7 +35,7 @@ export default function Hepatite() {
   return (
     <main className="">
       {/* Cursor sempre presente */}
-      <CustomCursor />
+      
 
       {!unlocked ? (
         // GATE DE SENHA

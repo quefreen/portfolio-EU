@@ -11,7 +11,7 @@ import { RetroHP } from "../_components/HPcomponents/RetroHP";
 export default function Home() {
   return (
     <main className="">
-    <CustomCursor />
+    
     <HeroHP />
     <ResumoHP />
     <DualHP />

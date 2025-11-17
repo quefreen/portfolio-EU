@@ -4,7 +4,7 @@ import { HeroDan } from "../_components/Danone/HeroDan";
 export default function Danone() {
   return (
     <main className="">
-    <CustomCursor />
+    
     <HeroDan />
     </main>
   )

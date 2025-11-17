@@ -251,7 +251,7 @@
 
 /* Esconde o cursor nativo em desktops */
 @media (pointer: fine) {
-  html, body, body * { cursor: none !important; }
+  html, body, body * { cursor: default !important; }
   /* Reexibe cursor de texto em campos editáveis, para não perder a I-beam */
   input, textarea, [contenteditable="true"] { cursor: text !important; }
 }

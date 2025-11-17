@@ -8,7 +8,7 @@ import { TextNid } from "../_components/Nidavellir/TextNid";
 export default function Nidavellir() {
   return (
     <main className="">
-        <CustomCursor />
+        
         <HeroNid />
         <TextNid />
         <ResumoNid />

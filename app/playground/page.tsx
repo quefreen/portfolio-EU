@@ -7,7 +7,7 @@ import { LabCriacao } from "../_components/LabCriacao";
 export default function RPG() {
   return (
     <main className="">
-        <CustomCursor />
+        
         <LabCriacao />
         <Footerhome />
         <Footer />

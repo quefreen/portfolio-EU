@@ -11,7 +11,7 @@ import { TriplePG } from "../_components/PG/TriplePG";
 export default function Home() {
   return (
     <main className="">
-   <CustomCursor />
+   
    <HeroPG />
    <ResumoPG />
    <IntroPG />

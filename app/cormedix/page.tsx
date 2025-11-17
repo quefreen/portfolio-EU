@@ -14,7 +14,7 @@ import { SolucaoCormedix } from "../_components/SolucaoCormedix"
 export default function Cormedix() {
   return (
     <div className="">
-      <CustomCursor />
+      
 
       {/* ⬇️ componente que provavelmente usa useSearchParams envolvido em Suspense */}
       <Suspense fallback={null}>

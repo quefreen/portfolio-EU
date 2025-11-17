@@ -9,7 +9,7 @@ import { TextRPG } from "../_components/RPG/TextRPG";
 export default function RPG() {
   return (
     <main className="">
-        <CustomCursor />
+       
         <HeroRPG />
         <TextRPG />
         <ResumoRPG />

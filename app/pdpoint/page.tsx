@@ -34,7 +34,7 @@ export default function PDPointPage() {
 
   return (
     <main className="">
-      <CustomCursor />
+      
 
       {!unlocked ? (
         // GATE DE SENHA
