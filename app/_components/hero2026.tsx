@@ -25,7 +25,7 @@ export function Hero2026() {
             <p
               className="absolute left-0 font-bricolageGrotesque font-semibold leading-[1.2] text-[#FF4C2C]"
               style={{ 
-                fontSize: "clamp(24px, 2.6vw, 44px)", 
+                fontSize: "clamp(24px, 2.6vw, 40px)", 
                 maxWidth: "16ch",
                 top: "80px" 
               }}
