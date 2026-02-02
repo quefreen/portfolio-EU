@@ -6,7 +6,7 @@ import { HeroAbout } from "../_components/heroabout";
 export default function Sobre() {
   return (
     <div className="">
-      <CustomCursor />
+      
      <HeroAbout />
      <FooterBase />
      <Footer />

@@ -11,7 +11,7 @@ export function DualPD () {
           <h2 className="mx-0 md:mx-16">Processo crítico <br />em risco.</h2>
         </div>
         <div className="h-4"></div>
-        <p className="mx-0 md:mx-16 leading-7 text-[1.2rem] max-w-[36ch] ">A MSD, uma das maiores farmacêuticas do mundo, dependia de um fluxo operacional vital para a gestão de exames.No entanto, a plataforma legada que suportava este processo era ineficientee propensa a erros, representandoum risco significativo para a agilidadee precisão de suas operações diárias.</p>
+        <p className="mx-0 md:mx-16 leading-7 text-[1.2rem] max-w-[36ch] ">A MSD, uma das maiores farmacêuticas do mundo, dependia de um fluxo operacional vital para a gestão de exames. No entanto, a plataforma legada que suportava este processo era ineficientee propensa a erros, representandoum risco significativo para a agilidadee precisão de suas operações diárias.</p>
         
       </div>
 
